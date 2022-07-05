@@ -10,6 +10,6 @@ window.addEventListener('scroll', function(){
     //this.document.body.style.filter = `grayscale(${window.scrollY/10}%)`;
 
     //下にスクロールするほど不透明度が下がる
-    //this.document.body.style.opacity =`${(1-(window.scrollY/1000)*0.6)}`
+    this.document.body.style.opacity =`${(1-(window.scrollY/1000)*0.5)}`
 });
 
