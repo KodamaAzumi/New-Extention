@@ -1,5 +1,6 @@
-const gsOffbutton = document.getElementById('gsOff')
 
+//グレースケールをオフにする処理
+const gsOffbutton = document.getElementById('gsOff')
 let gsOff = () =>{
     console.log('gsOffが押されました');
     /*
@@ -7,11 +8,10 @@ let gsOff = () =>{
     chrome.tabs.reload();
     */
 };
-
 gsOffbutton.addEventListener('click', gsOff)
 
+//不透明度を100%に戻す処理
 const opOffbutton = document.getElementById('opOff')
-
 let opOff = () =>{
     console.log('opOffが押されました');
     /*
@@ -19,12 +19,11 @@ let opOff = () =>{
     chrome.tabs.reload();
     */
 };
-
 opOffbutton.addEventListener('click', opOff)
 
 
-
-document.getElementById('btn').addEventListener('click', async () => {
+//スクリーンショットを取って保存する処理
+document.getElementById('shbtn').addEventListener('click', async () => {
     // タブ情報取得
     let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
   
