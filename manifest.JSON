@@ -5,8 +5,10 @@
     "manifest_version": 3,
     "content_scripts": [
         {
+            "run_at": "document_end",
           "matches": ["<all_urls>"],
-          "js": ["js/content-script.js"]
+          "js": ["js/p5.min.js", "js/content-script.js"],
+          "css":["style.css"]
         }
     ],
     "action": {

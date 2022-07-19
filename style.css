@@ -1,0 +1,12 @@
+/*画像を反転させる*/
+/*
+img{
+    transform : scale(-1,-1);
+}
+*/
+
+#p5Canvas {
+    position: fixed;
+    z-index: 30;
+    pointer-events: none;
+}
